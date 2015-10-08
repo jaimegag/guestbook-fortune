@@ -1,0 +1,11 @@
+---
+applications:
+- name: fortune-service-feny
+  memory: 512M
+  instances: 1
+  host: fortune-service-feny
+  path: ./target/demo-fortune-service-0.0.1-SNAPSHOT.jar
+  services:
+    - gbfortune-db
+    - config-server
+    - service-registry

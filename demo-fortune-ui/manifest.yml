@@ -1,0 +1,11 @@
+---
+applications:
+- name: fortune-ui-feny
+  memory: 512M
+  instances: 1
+  host: fortune-ui-feny
+  path: ./target/demo-fortune-ui-0.0.1-SNAPSHOT.jar
+  services:
+    - config-server
+    - service-registry
+    - circuit-breaker

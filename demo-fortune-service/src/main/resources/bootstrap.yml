@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: fortunes
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        serviceId: configserver
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.service-registry.credentials.uri:http://127.0.0.1:8761}/eureka/

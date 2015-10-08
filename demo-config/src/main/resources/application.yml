@@ -1,0 +1,11 @@
+server:
+  port: 8887
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jaimegag/config-repo.git
