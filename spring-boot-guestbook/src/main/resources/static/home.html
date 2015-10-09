@@ -1,0 +1,29 @@
+<div class="container fluid" ng-show="cloudinfo">
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3"><h3>Cloud Information</h3></div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3 col-xs-offset-3">App Name:</div>
+   		<div class="col-xs-6">{{cloudinfo.name}}</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3 col-xs-offset-3">Host Name:</div>
+   		<div class="col-xs-6">{{cloudinfo.host_name}}</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3 col-xs-offset-3">Instance IP:</div>
+   		<div class="col-xs-6">{{cloudinfo.ip}}</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3 col-xs-offset-3">Instance Port:</div>
+   		<div class="col-xs-6">{{cloudinfo.port}}</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3 col-xs-offset-3">Instance Index:</div>
+   		<div class="col-xs-6">{{cloudinfo.instance_index}}</div>
+	</div>
+</div>
+<div style="margin-top: 20px;">
+	<button type="button" class="btn btn-primary" ng-click="goMessage()">GuestBook Message</button>
+	<button type="button" class="btn btn-danger pull-right" ng-click="goKillApp()">Kill App</button>
+</div>

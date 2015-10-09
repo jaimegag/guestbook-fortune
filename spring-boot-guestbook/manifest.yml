@@ -1,0 +1,12 @@
+---
+applications:
+- name: guestbook-feny
+  memory: 1G
+  instances: 1
+  host: guestbook-feny
+  path: ./target/guestbook-0.0.1-SNAPSHOT.jar
+  services:
+    - gbfortune-db
+    - config-server
+    - service-registry
+    - circuit-breaker
