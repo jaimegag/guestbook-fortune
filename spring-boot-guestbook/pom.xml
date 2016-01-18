@@ -20,7 +20,7 @@
 	<parent>
 		<groupId>io.pivotal.spring.cloud</groupId>
 		<artifactId>spring-cloud-services-starter-parent</artifactId>
-		<version>1.0.0.M1</version>
+		<version>1.0.1.RELEASE</version>
 		<relativePath />
 		<!-- lookup parent from repository -->
 	</parent>
@@ -95,7 +95,7 @@
 		
 	</dependencies>
 	
-	<dependencyManagement>
+	<!--  dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
@@ -105,7 +105,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
+	</dependencyManagement -->
 
 	<build>
 		<plugins>
@@ -118,12 +118,8 @@
 	
 	<repositories>
 		<repository>
-			<id>spring-milestone</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone/</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
+			<id>spring-release</id>
+			<url>https://repo.spring.io/libs-release</url>
 		</repository>
 	</repositories>
 
