@@ -10,3 +10,5 @@ applications:
     - config-server
     - service-registry
     - circuit-breaker
+  env:
+    CF_TARGET: https://api.pcf4.cloud.fe.pivotal.io
