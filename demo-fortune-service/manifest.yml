@@ -9,3 +9,5 @@ applications:
     - gbfortune-db
     - config-server
     - service-registry
+  env:
+    CF_TARGET: https://api.pcf4.cloud.fe.pivotal.io
