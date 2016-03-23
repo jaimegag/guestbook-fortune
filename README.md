@@ -7,20 +7,21 @@ Alternatively the demo-fortune-service, demo-fortune-ui and spring-boot-guestboo
 # Here's some handy information about the microservices included:
 
 CONFIGURE config_repo in CONFIG SERVER
-https://github.com/jaimegag/config-repo
+- https://github.com/jaimegag/config-repo
 
 ACCESS FORTUNE SERVICE ENDPOINT
-https://fortune-service-feny.[DOMAIN]/fortunes
-https://fortune-service-feny.[DOMAIN]/random
-https://fortune-service-feny.[DOMAIN]/remote-fortune
+- https://fortune-service-feny.[DOMAIN]/fortunes
+- https://fortune-service-feny.[DOMAIN]/random
+- https://fortune-service-feny.[DOMAIN]/remote-fortune
 
 ACCESS FORTUNE UI
-https://fortune-ui-feny.[DOMAIN]/
+- https://fortune-ui-feny.[DOMAIN]/
 
 ACCESS GUESTBOOK
-https://guestbook-feny.[DOMAIN]/
+- https://guestbook-feny.[DOMAIN]/
 
 ARCHITECTURE
+```
 UI App -> Service Registry <- GuestBook App -----------------
   |                            |                            |
   |......> Via Hystrix <.......|                            |
@@ -30,3 +31,4 @@ UI App -> Service Registry <- GuestBook App -----------------
 			----> MySQL DB <---------------------
 			|
 			----> Config Server
+```
