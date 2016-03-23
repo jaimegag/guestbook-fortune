@@ -4,7 +4,9 @@ This repository contains a sample composition of microservices integrated with S
 All apps/microservices are Spring Boot apps and can run standalone by running the demo-config, demo-eureka and demo-hystrix-dashbboard apps.
 Alternatively the demo-fortune-service, demo-fortune-ui and spring-boot-guestbook can be deployed in Cloud Foundry and bound to Spring Cloud Services.
 
-# Here's some handy information about the microservices included:
+### To create services in Cloud Foundry use the create_services.sh
+
+### Here's some handy information about the microservices included:
 
 CONFIGURE config_repo in CONFIG SERVER
 - https://github.com/jaimegag/config-repo
