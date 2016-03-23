@@ -7,25 +7,25 @@ Alternatively the demo-fortune-service, demo-fortune-ui and spring-boot-guestboo
 ### To create services in Cloud Foundry use the create_services.sh
 
 ### Here's some handy information about the microservices included:
-
+  
 
 CONFIGURE config_repo in CONFIG SERVER
 - https://github.com/jaimegag/config-repo
-
+  
 
 ACCESS FORTUNE SERVICE ENDPOINT
 - https://fortune-service-feny.[DOMAIN]/fortunes
 - https://fortune-service-feny.[DOMAIN]/random
 - https://fortune-service-feny.[DOMAIN]/remote-fortune
-
+  
 
 ACCESS FORTUNE UI
 - https://fortune-ui-feny.[DOMAIN]/
-
+  
 
 ACCESS GUESTBOOK
 - https://guestbook-feny.[DOMAIN]/
-
+  
 
 ARCHITECTURE
 ```
