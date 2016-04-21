@@ -13,10 +13,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Logger;
 
-/**
- * @author sgupta
- * @since 9/22/15.
- */
 @Controller
 @RequestMapping(value = "/message/**", produces = "application/json")
 public class GuestbookController {
@@ -43,7 +39,7 @@ public class GuestbookController {
   @ResponseBody
   public Message putMessage(@RequestBody Message message) {
     LOGGER.info("message repo is: " + messageRepository);
-
+    LOGGER.info("message =: " + message);
     return messageRepository.save(message);
   }
 

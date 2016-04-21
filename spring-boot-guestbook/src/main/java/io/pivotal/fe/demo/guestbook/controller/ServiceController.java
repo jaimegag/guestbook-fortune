@@ -1,9 +1,8 @@
 package io.pivotal.fe.demo.guestbook.controller;
 
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.pivotal.fe.demo.guestbook.service.FortuneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.Cloud;
 import org.springframework.cloud.CloudException;
@@ -15,10 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import io.pivotal.fe.demo.guestbook.service.FortuneService;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
 
 @Controller
 public class ServiceController {
@@ -58,7 +55,7 @@ public class ServiceController {
 		try {
 			Map<String, Object> props = cloudInfo.getProperties();
 			props.put("host_name", hostName);
-			props.put("ip", request.getRemoteAddr());
+			props.put("ip", request.getLocalAddr());
 			properties = mapper.writeValueAsString(props);
 		} catch (JsonProcessingException e) {
 			// TODO Auto-generated catch block

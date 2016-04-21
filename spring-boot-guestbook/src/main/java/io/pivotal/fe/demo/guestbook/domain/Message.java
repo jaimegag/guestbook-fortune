@@ -1,10 +1,9 @@
 package io.pivotal.fe.demo.guestbook.domain;
 
 
-import javax.persistence.*;
-
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,8 +14,6 @@ import java.util.Date;
 @Entity
 @Table(name = "Message")
 public class Message implements Serializable {
-
-  private static final long serialVersionUID = -4291753241578387042L;
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
