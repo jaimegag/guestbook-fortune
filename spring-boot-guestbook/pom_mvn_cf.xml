@@ -113,6 +113,27 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.cloudfoundry</groupId>
+				<artifactId>cf-maven-plugin</artifactId>
+				<version>1.1.2</version>
+				<configuration>
+<!--					<server>cloud-foundry-credentials-pcf4</server>
+					<target>https://api.pcf4.cloud.fe.pivotal.io</target>
+					<org>student5-org</org>
+					<space>development</space>
+					<appname>pcfdemo</appname>
+					<url>http://guestbook.pcf4.cloud.fe.pivotal.io/</url>-->
+                    <server>cloud-foundry-credentials-pws</server>
+                    <target>https://api.run.pivotal.io</target>
+                    <org>Northeast / Canada</org>
+                    <space>jaime</space>
+                    <appname>pcfdemo</appname>
+                    <url>http://guestbook-jaime.cfapps.io/</url>
+					<memory>512</memory>
+					<instances>1</instances>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	
